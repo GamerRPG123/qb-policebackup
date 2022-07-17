@@ -41,7 +41,7 @@ RegisterCommand("cp", function(QBCore, jobName)
     if true then
         jobName = PlayerData.job.name
         if jobName == "police" then
-           exports['mythic_notify']:DoHudText('inform', 'Agora podes receber e enviar codigos!', { ['background-color'] = '#ffffff', ['color'] = '#000000' })
+           exports['mythic_notify']:DoHudText('inform', 'Now you can send codes!', { ['background-color'] = '#ffffff', ['color'] = '#000000' })
        end
     end
 
@@ -51,7 +51,7 @@ Citizen.Wait(0)
   if IsControlPressed(0, 36) and IsControlPressed(1, 174) and jobName == "police" then
     if count == 0 then 
       local coords = GetEntityCoords(GetPlayerPed(GetPlayerFromServerId(src)))
-      exports['mythic_notify']:DoHudText('inform', 'CODIGO 1 Alguem está a pedir apoio', { ['background-color'] = '#001B7F', ['color'] = '#ffffff' })
+      exports['mythic_notify']:DoHudText('inform', 'CODE 1 A police officer is asking for help', { ['background-color'] = '#001B7F', ['color'] = '#ffffff' })
       local Blip1 = AddBlipForCoord(coords.x, coords.y)
       SetBlipSprite(Blip1, 304)
       SetBlipColour(Blip1, 38)
@@ -77,7 +77,7 @@ Citizen.Wait(0)
   if IsControlPressed(0, 36) and IsControlPressed(1,  173) and jobName == "police" then
     if count == 0 then 
       local coords = GetEntityCoords(GetPlayerPed(GetPlayerFromServerId(src)))
-      exports['mythic_notify']:DoHudText('inform', 'CODIGO 2 Alguem está a pedir apoio', { ['background-color'] = '#001B7F', ['color'] = '#ffffff' })
+      exports['mythic_notify']:DoHudText('inform', 'CODE 2 A police officer is asking for help', { ['background-color'] = '#001B7F', ['color'] = '#ffffff' })
       local Blip2 = AddBlipForCoord(coords.x, coords.y)
       SetBlipSprite(Blip2, 304)
       SetBlipColour(Blip2, 38)
@@ -101,7 +101,7 @@ Citizen.Wait(0)
   if IsControlPressed(1, 36) and IsControlPressed(1,  175) and jobName == "police" then
     if count == 0 then 
       local coords = GetEntityCoords(GetPlayerPed(GetPlayerFromServerId(src)))
-      exports['mythic_notify']:DoHudText('inform', 'CODIGO 3 Alguem está a pedir apoio', { ['background-color'] = '#BFBA23', ['color'] = '#ffffff' })
+      exports['mythic_notify']:DoHudText('inform', 'CODE 3 A police officer is asking for help', { ['background-color'] = '#BFBA23', ['color'] = '#ffffff' })
       SetNewWaypoint(coords.x, coords.y)
       PlaySoundFrontend(-1, "Mission_Pass_Notify", "DLC_HEISTS_GENERAL_FRONTEND_SOUNDS", 1)
       local Blip3 = AddBlipForCoord(coords.x, coords.y)
@@ -127,7 +127,7 @@ Citizen.Wait(0)
   if IsControlPressed(1, 36) and IsControlPressed(1,  27) and jobName == "police" then
     if count == 0 then 
       local coords = GetEntityCoords(GetPlayerPed(GetPlayerFromServerId(src)))
-      exports['mythic_notify']:DoHudText('inform', 'CODIGO 99 Alguem está a pedir apoio', { ['background-color'] = '#FF0000', ['color'] = '#ffffff' })
+      exports['mythic_notify']:DoHudText('inform', 'CODE 99 A police officer is asking for help', { ['background-color'] = '#FF0000', ['color'] = '#ffffff' })
       SetNewWaypoint(coords.x, coords.y)
       playCode99Sound()
       local Blip99 = AddBlipForCoord(coords.x, coords.y)
