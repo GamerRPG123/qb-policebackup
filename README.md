@@ -1,15 +1,5 @@
 ## GAMERRPG   POLICE BACKUP ##
 
-**Police Backup - By FAXES**
-
-# Discord Help
-http://faxes.zone/discord
-
-**In the Download**
-  >__resource.lua
-  client.lua
-  License.md
-
 EDITED BY Gamer RPG
 
 This script is a free QBCORE version of Police Backup.
@@ -32,6 +22,6 @@ If you detect errors, just mention it on my discord.
 
 It was created by GamerRPG if you need support just enter my DISCORD :)
 
-https://discord.gg/Wbx8tWtD4m
+# https://discord.gg/Wbx8tWtD4m
 
 Required: https://github.com/JayMontana36/mythic_notify
